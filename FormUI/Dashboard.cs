@@ -35,5 +35,17 @@ namespace FormUI
 
             UpdateBinding();
         }
+
+        private void insertRecordButton_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+
+            db.InsertPerson(firstNameInsText.Text, lastNameInsText.Text, emailAddressInsText.Text, phoneNumberInsText.Text);
+
+            firstNameInsText.Text = "";
+            lastNameInsLabel.Text = "";
+            emailAddressInsText.Text = "";
+            phoneNumberInsText.Text = "";
+        }
     }
 }
