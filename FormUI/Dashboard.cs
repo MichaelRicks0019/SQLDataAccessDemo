@@ -43,7 +43,7 @@ namespace FormUI
             db.InsertPerson(firstNameInsText.Text, lastNameInsText.Text, emailAddressInsText.Text, phoneNumberInsText.Text);
 
             firstNameInsText.Text = "";
-            lastNameInsLabel.Text = "";
+            lastNameInsText.Text = "";
             emailAddressInsText.Text = "";
             phoneNumberInsText.Text = "";
         }
